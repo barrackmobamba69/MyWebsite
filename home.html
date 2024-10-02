@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UdayySinghPawar</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+
+<body>
+    <header>
+        <img src="https://github.com/UdayySinghPawar.png" alt="Website logo">
+        <h1>Hello World!</h1>
+        <h2>My name's Udayy Singh Pawar</h2>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <!-- About page starts from here -->
+        <div class="section" id="about">
+            <h4>Hello I'm</h4>
+            <h1>Udayy Singh Pawar</h1>
+            <p>I am a fourth year student at Griffith College Dublin studying Bsc Hons in Computing Scince. My interets
+                include web development and coding. </p>
+        </div>
+
+        <!-- About page starts from here -->
+        <div class="section" id="portfolio">
+            <h4>Hello I'm</h4>
+            <h1>Udayy Singh Pawar</h1>
+            <p>I am a fourth year student at Griffith College Dublin studying Bsc Hons in Computing Scince. My interets
+                include web development and coding. </p>
+        </div>
+
+        <!-- Contact page starts from here -->
+        <div class="section" id="contact">
+            <h1>Get in touch with me</h1>
+            <p>Email: udayysinghpawar@protonmail.com</p>
+            <p>Phone: +353 089 204 3647</p>
+        </div>
+    </header>
+
+    <!-- JavaScript code starts from here -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.rings.min.js"></script>
+    <script>
+        var setVanta = () => {
+            if (window.VANTA) window.VANTA.RINGS({
+                el: ".s-page-1 .s-section-1 .s-section",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 200.00,
+                minWidth: 200.00,
+                scale: 1.00,
+                scaleMobile: 1.00,
+                backgroundColor: 0xff0a0a,
+                color: 0x54541b,
+                backgroundAlpha: 0.76
+            })
+        }
+        _strk.push(function () {
+            setVanta()
+            window.edit_page.Event.subscribe("Page.beforeNewOneFadeIn", setVanta)
+        })
+    </script>
+
+
+</body>
+
+</html>
